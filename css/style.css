@@ -1,0 +1,165 @@
+body {
+    background-color: rgb(233, 233, 233);
+    font-family: 'Anonymous Pro', monospace;
+    margin: 20px;
+}
+
+.cover {
+    height: 50vh;
+    display: grid; 
+    grid-template-columns: 1fr 0.5fr 20fr 0.2fr 1fr; 
+    grid-template-rows: 1fr 0.5fr 8fr 0.2fr 1fr; 
+    gap: 1px 1px;
+}
+
+.first-box {
+    background-color: rgb(212, 212, 212);
+    grid-area: 2 / 2 / 4 / 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    text-align: center;
+}
+
+.second-box {
+    grid-area: 3 / 3 / 5 / 5;
+    background-color: rgb(72, 72, 72);
+}
+
+
+.first-box h1 {
+    font-size: 10rem;
+    margin: 0;
+}
+
+.first-box h2 {
+    font-size: 3rem;
+}
+
+.hello {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-dog {
+    height: 200px;
+    border: 3px solid black;
+    border-radius: 30%;
+}
+
+.hello h1 {
+    font-size: 3rem;
+}
+
+.hello p {
+    margin: 0.5em;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.project {
+    height: 50%;
+    margin: 70px 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.game {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+}
+
+.title-project {
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 100px;
+}
+
+.icon {
+    height: 150px;
+    width: 150px;
+    border: 5px solid black;
+    padding: 5px;
+    box-shadow: 10px 5px 10px rgb(157, 158, 155);
+}
+
+.basket {
+    background-color: orange;
+}
+.music {
+    background-color: blanchedalmond;
+}
+
+.darts {
+    background-color: indianred;
+}
+
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-me h1 {
+    font-size: 2.5rem;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+.button {
+    font-family: MinecraftTen, Verdana, Tahoma;
+    background-color: rgb(188, 188, 188);
+    border: none;
+    color: black;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+@media (max-width: 1260px) {
+  .project {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .game {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 820px) {
+    .first-box h1 {
+        font-size: 7rem;
+    }
+
+    .first-box h2{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .hello h1 {
+        font-size: 2rem;
+    }
+
+    .contact-me {
+        width: 300px;
+        margin: auto;
+    }
+}
